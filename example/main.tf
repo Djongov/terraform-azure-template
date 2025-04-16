@@ -20,10 +20,11 @@ locals {
 }
 
 module "whatever-this-module-is" {
-  source = "../"
-  environment = var.environment
-  location = var.location
-  subscription_id = var.subscription_id
-  common_tags = local.common_tags
-  # resource_group_name = var.resource_group_name
+  #source               = "git@github.com:Djongov/terraform-azure-template.git?ref=main"
+  source                = "../"
+  environment           = var.environment
+  location              = var.location
+  subscription_id       = var.subscription_id
+  common_tags           = local.common_tags
+  #resource_group_name = var.resource_group_name
 }
