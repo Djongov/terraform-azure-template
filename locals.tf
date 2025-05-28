@@ -1,8 +1,9 @@
 locals {
   # let's define common tags that we can use to apply to all resources
   common_tags = merge({
-    "managed-by"        = "terraform"
-    "environment"       = var.environment
+    "managed-by"  = "terraform"
+    "environment" = var.environment
+    "repo-name"   = var.repo_name
     #"last-updated-by"  = data.azuread_user.current_user.user_principal_name
     #"last_updated_at" = plantimestamp() # it is a cool idea but can be a lot of output so for now it's off
     },

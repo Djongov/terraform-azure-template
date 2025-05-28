@@ -24,6 +24,17 @@ variable "subscription_id" {
   type        = string
 }
 
+variable "project_name" {
+  description = "Project name for the resources, used in tagging"
+  type        = string
+}
+
+# Repo name
+variable "repo_name" {
+  description = "repo name that will be used in tagging of resources"
+  type        = string
+}
+
 # Common tags that will be applied to all resources
 variable "common_tags" {
   type    = map(string)
